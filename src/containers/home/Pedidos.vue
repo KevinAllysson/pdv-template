@@ -44,33 +44,3 @@ export default {
     },
 }
 </script>
-<style >
-    .head-tbl{
-        padding: 6px 16px;
-        background-color: #424242;
-        border-radius: 50px;
-    }
-    .tbody-tbl{
-        margin: 14px 16px;
-    }
-    .box-status{
-        background-color: #424242;
-        border-radius: 50px;
-        padding: 4px 10px;
-        width: 100px;
-        text-align: center;
-        text-transform: capitalize;
-    }
-    .entregue{
-        color: #27fe68;
-        background-color: #21462c;
-    }
-    .pendente{
-        color: #FCB80B;
-        background-color: #3e4621;
-    }
-    .cancelado{
-        color: #FA0000;
-        background-color: #462121;
-    }
-</style>

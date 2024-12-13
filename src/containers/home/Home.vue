@@ -1,6 +1,6 @@
 <template>
     <div class="grid grid-cols-4 ">
-        <div class="home-page col-span-3">
+        <div class="home-page col-span-3 ">
             <Categorias/>
             <Popular/>
             <Pedidos/>
@@ -23,10 +23,3 @@ export default {
     }
 }
 </script>
-<style >
-    .home-page{
-        width: 100%;
-        height: 100vh;
-        /* padding: 35px; */
-    }
-</style>

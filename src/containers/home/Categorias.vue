@@ -15,7 +15,7 @@
         </div>
         <div class="mt-4">
             <div class=" flex flex-row justify-around overflow-x-auto">
-                <div v-for="(cat, index) in categorias" :key="cat.idCategory" class="sty-categ rounded-full h-32 w-32 " :title="cat.strCategory">
+                <div v-for="(cat, index) in categorias" :key="cat.idCategory" class="categories rounded-full h-32 w-32 " :title="cat.strCategory">
                     <img :src="cat.strCategoryThumb" alt="" srcset="" class="">
                 </div>
             </div>
@@ -56,10 +56,3 @@ export default {
     }
 }
 </script>
-<style>
-.sty-categ {
-    display: flex;
-    align-items: center;
-    background: linear-gradient(135deg, rgba(126,117,100,1) 0%, rgba(97,77,58,1) 100%);
-}
-</style>

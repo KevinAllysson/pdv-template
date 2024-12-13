@@ -97,7 +97,6 @@ export default {
         async getCategorias() {
             try {
                 const res = await axios.get('https://www.themealdb.com/api/json/v1/1/categories.php');
-                console.log(res.data.categories);
                 let count = 0;
                 if (res.status == 200 || res.status == 204) {
                     for (const ctg of res.data.categories) {
@@ -120,68 +119,3 @@ export default {
 
 }
 </script>
-
-<style>
-.carrinho-page {
-    --r: 35px;
-    border-radius: 20px;
-    background: #515151;
-    mask: radial-gradient(var(--r) at 10% calc(70%), #0000 calc(100% - 1px), #000) calc(-1 * var(--r));
-    margin: 40px 10px 40px 0;
-    padding: 15px;
-}
-
-.card-endereco {
-    border-radius: 20px;
-    padding: 17px;
-    background-color: #6D6D6D;
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-}
-
-.selected {
-    background: linear-gradient(180deg, rgba(232, 90, 82, 1) 0%, rgba(185, 51, 48, 1) 100%);
-    border-radius: 9999px;
-    font-weight: bold;
-    color: white;
-}
-
-.op-tipo {
-    padding: 7px;
-    font-size: 12px;
-    margin: 7px;
-    cursor: pointer;
-}
-
-.item:not(:last-child) {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
-.border-cut {
-    border-top: 4px dashed #1D1D1D;
-}
-
-.codigo-promo {
-    border-width: 2px;
-    border-style: solid;
-    padding: 5px 15px;
-
-    border-top-color: #1d1d1d81;
-    border-bottom-color: #fefefe25;
-    border-left-color: #1d1d1d46;
-    border-right-color: #1d1d1d46;
-    border-radius: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.adicionar {
-    background: linear-gradient(180deg, rgb(41, 41, 41) 0%, rgb(0, 0, 0) 100%);
-    border-radius: 20px;
-    font-weight: bold;
-}
-</style>

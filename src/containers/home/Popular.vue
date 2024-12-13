@@ -77,22 +77,3 @@ export default {
     }
 }
 </script>
-<style>
-.box {
-    width: 200px;
-    background-color: #313131;
-    border-radius: 30px;
-    height: 23vh;
-}
-
-.sombra {
-    position: absolute;
-    width: 150px;
-    height: 300px;
-    background-color: #1D1D1D;
-    background: linear-gradient(270deg, rgba(29,29,29,1) 0%, rgba(29, 29, 29, 0.856) 30%, rgba(29, 29, 29, 0.137) 60%, rgba(27, 27, 27, 0) 100%);
-    z-index: 40;
-    right: 0;
-}
-
-</style>
